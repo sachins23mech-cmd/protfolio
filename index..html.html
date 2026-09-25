@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sachin S — Mechanical Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E11; --panel:#12161B; --panel-2:#161B21;
+    --line: rgba(255,255,255,0.09);
+    --text:#D7DDE3; --dim:#7B8794; --faint:#4D5661;
+    --green:#39FF88; --amber:#FFB020; --pink:#FF5D8F; --blue:#5AC8FA;
+  }
+  *{box-sizing:border-box;}
+  html{padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:'JetBrains Mono',monospace; font-size:14px;}
+  .wrap{max-width:920px; margin:0 auto; padding:28px 20px 70px;}
+
+  .win{border:1px solid var(--line); background:var(--panel); border-radius:8px; overflow:hidden;}
+  .win-bar{display:flex; align-items:center; gap:8px; padding:10px 14px; background:var(--panel-2); border-bottom:1px solid var(--line);}
+  .dot{width:10px; height:10px; border-radius:50%;}
+  .dot.r{background:#FF5F56;} .dot.y{background:#FFBD2E;} .dot.g{background:#27C93F;}
+  .win-title{margin-left:8px; color:var(--dim); font-size:12px;}
+  .win-body{padding:22px 24px;}
+
+  .prompt{color:var(--green);}
+  .name{font-size:34px; font-weight:700; color:#fff; margin:4px 0 2px;}
+  .role{color:var(--blue); font-size:13px;}
+
+  .kv{display:grid; grid-template-columns:110px 1fr; gap:6px 14px; margin-top:18px; font-size:13px;}
+  .kv .k{color:var(--faint);}
+  .kv .v a{color:var(--blue); text-decoration:none; border-bottom:1px dotted var(--blue);}
+  .kv .v{color:var(--text);}
+
+  .section{margin-top:26px;}
+  .sec-head{display:flex; align-items:center; gap:8px; color:var(--amber); font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin-bottom:12px;}
+  .sec-head::before{content:"//"; color:var(--faint);}
+
+  .code-line{display:flex; gap:14px; padding:3px 0;}
+  .ln{color:var(--faint); width:22px; text-align:right; flex-shrink:0; user-select:none;}
+  .code-line p{margin:0; color:var(--dim); line-height:1.6;}
+
+  .edu-item{border-left:2px solid var(--line); padding:2px 0 14px 16px; position:relative;}
+  .edu-item::before{content:""; position:absolute; left:-5px; top:6px; width:8px; height:8px; border-radius:50%; background:var(--green);}
+  .edu-item .title{color:#fff; font-size:13.5px;}
+  .edu-item .meta{color:var(--faint); font-size:12px; margin-top:3px;}
+  .edu-item .yr{color:var(--pink); font-size:11px; margin-top:3px;}
+
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{border:1px solid var(--line); background:var(--panel-2); color:var(--green); font-size:12px; padding:6px 12px; border-radius:5px;}
+  .chip.b{color:var(--blue);}
+  .chip.p{color:var(--pink);}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+
+  .entry{display:flex; justify-content:space-between; gap:14px; padding:10px 0; border-bottom:1px solid var(--line); font-size:13px;}
+  .entry:first-child{border-top:1px solid var(--line);}
+  .entry .desc{color:var(--text);}
+  .entry .desc span{color:var(--faint);}
+  .entry .tag{color:var(--pink); font-size:11px; white-space:nowrap;}
+
+  .ref-box{border:1px solid var(--line); background:var(--panel-2); border-radius:6px; padding:16px 18px; font-size:13px; color:var(--dim); line-height:1.7;}
+  .ref-box .rn{color:#fff; font-weight:600;}
+  .ref-box a{color:var(--blue);}
+
+  .decl{color:var(--faint); font-size:12.5px; line-height:1.7; font-style:italic; margin-top:8px;}
+
+  @media(max-width:640px){
+    .grid2{grid-template-columns:1fr;}
+    .name{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="win">
+    <div class="win-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="win-title">~/portfolio/sachin-s.cv</span></div>
+    <div class="win-body">
+      <div class="prompt">$ whoami</div>
+      <div class="name">Sachin S</div>
+      <div class="role">B.E. Mechanical Engineering — Kongu Engineering College</div>
+
+      <div class="kv">
+        <span class="k">email</span><span class="v"><a href="mailto:ss0894286@gmail.com">ss0894286@gmail.com</a></span>
+        <span class="k">phone</span><span class="v">+91 94886 34175</span>
+        <span class="k">location</span><span class="v">Nambiyur, Erode</span>
+        <span class="k">dob</span><span class="v">16.07.2006</span>
+        <span class="k">linkedin</span><span class="v"><a href="#">linkedin</a></span>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">career_objective</div>
+        <div class="code-line"><span class="ln">01</span><p>To be committed and efficient in my work and to enhance the growth of</p></div>
+        <div class="code-line"><span class="ln">02</span><p>the organization by improving and applying my competency at work.</p></div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">education</div>
+        <div class="edu-item"><div class="title">B.E. Mechanical Engineering — Kongu Engineering College</div><div class="meta">Currently pursuing</div><div class="yr">2023 — current</div></div>
+        <div class="edu-item"><div class="title">HSC — Kamaraj Hr. Sec. School</div><div class="meta">52.5% (1st year) · 66.6% (2nd year)</div><div class="yr">2021 — 2023</div></div>
+        <div class="edu-item"><div class="title">SSLC — Kamaraj Hr. Sec. School</div><div class="meta">Pass</div><div class="yr">2020 — 2021</div></div>
+      </div>
+
+      <div class="section grid2">
+        <div>
+          <div class="sec-head">skill_set</div>
+          <div class="chips"><span class="chip">Python</span><span class="chip">C programming</span></div>
+        </div>
+        <div>
+          <div class="sec-head">soft_skill</div>
+          <div class="chips"><span class="chip b">Time management</span><span class="chip b">Team collaboration</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">field_of_interest</div>
+        <div class="chips"><span class="chip p">3D Modelling</span><span class="chip p">Manufacturing</span><span class="chip p">Automobile</span></div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">certificate</div>
+        <div class="entry"><div class="desc">Paper presentation — <span>"Staircase application of footstep using power generation," conducted by Synergy, NIT Trichy</span></div></div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">certified_course</div>
+        <div class="chips"><span class="chip">Solid Edge</span><span class="chip">HyperMesh</span></div>
+      </div>
+
+      <div class="section grid2">
+        <div>
+          <div class="sec-head">language</div>
+          <div class="chips"><span class="chip b">Tamil</span><span class="chip b">English</span></div>
+        </div>
+        <div>
+          <div class="sec-head">hobbies</div>
+          <div class="chips"><span class="chip p">Athlete</span><span class="chip p">Football</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">reference</div>
+        <div class="ref-box">
+          <span class="rn">Dr. P. Selvakumar, M.Tech., Ph.D.</span><br>
+          Professor and HOD of Mechanical Engineering, Kongu Engineering College, Perundurai, Erode - 638060<br>
+          <a href="mailto:selvakumar@kongu.ac.in">selvakumar@kongu.ac.in</a> · +91 95663 41992
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sec-head">declaration</div>
+        <p class="decl">I hereby declare that all the details mentioned above are true to the best of my knowledge and belief.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
